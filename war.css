@@ -1,33 +1,49 @@
 @keyframes play-down {
- 100% { background-position: -576px; }
+  100% {
+    background-position: -576px;
+  }
 }
 
 @keyframes play-up {
- 100% { background-position: -576px 832px; }
+  100% {
+    background-position: -576px 832px;
+  }
 }
 
 @keyframes play-left {
- 100% { background-position: -576px 768px; }
+  100% {
+    background-position: -576px 768px;
+  }
 }
 
 @keyframes play-right {
- 100% { background-position: -576px 640px; }
+  100% {
+    background-position: -576px 640px;
+  }
 }
 
 @keyframes attack-down {
- 100% { background-position: -832px 192px; }
+  100% {
+    background-position: -832px 192px;
+  }
 }
 
 @keyframes attack-up {
- 100% { background-position: -832px 320px; }
+  100% {
+    background-position: -832px 320px;
+  }
 }
 
 @keyframes attack-left {
- 100% { background-position: -832px 256px; }
+  100% {
+    background-position: -832px 256px;
+  }
 }
 
 @keyframes attack-right {
- 100% { background-position: -832px 128px; }
+  100% {
+    background-position: -832px 128px;
+  }
 }
 
 .content {
@@ -36,67 +52,73 @@
   bottom: 0px;
   left: 0px;
   right: 0px;
-  background-color: rgba(230,250,230, 1);
+  background-color: rgba(230, 250, 230, 1);
 }
 
 .character.warrior {
-  background: url('warrior.png') left center;
+  background: url("warrior.png") left center;
 }
 .warrior.character.up {
-  background: url('warrior.png') 0px 832px;
+  background: url("warrior.png") 0px 832px;
 }
 
 .warrior.character.left {
-  background: url('warrior.png') 0px 768px;
+  background: url("warrior.png") 0px 768px;
 }
 
 .warrior.character.right {
-  background: url('warrior.png') 0px 640px;
+  background: url("warrior.png") 0px 640px;
 }
 
 .warrior.attack.down {
-  background: url('warrior.png') 0px 192px;
-  animation: attack-down .5s steps(13);
+  background: url("warrior.png") 0px 192px;
+  animation: attack-down 0.5s steps(13);
 }
 .warrior.attack.up {
-  background: url('warrior.png') 0px 320px;
-  animation: attack-up .5s steps(13);
+  background: url("warrior.png") 0px 320px;
+  animation: attack-up 0.5s steps(13);
 }
 .warrior.attack.left {
-  background: url('warrior.png') 0px 256px;
-  animation: attack-left .5s steps(13);
+  background: url("warrior.png") 0px 256px;
+  animation: attack-left 0.5s steps(13);
 }
 .warrior.attack.right {
-  background: url('warrior.png') 0px 128px;
-  animation: attack-right .5s steps(13);
+  background: url("warrior.png") 0px 128px;
+  animation: attack-right 0.5s steps(13);
 }
-
 
 .character {
   width: 64px;
   height: 64px;
-  background: url('./base.png') left center;
-  animation: play-down .5s steps(9) infinite;
+  background: url("./base.png") left center;
+  animation: play-down 0.5s steps(9) infinite;
   position: absolute;
 }
- 
+
 .character.up {
-  background: url('./base.png') 0px 832px;
-  animation: play-up .5s steps(9) infinite;
+  background: url("./base.png") 0px 832px;
+  animation: play-up 0.5s steps(9) infinite;
 }
 
 .character.left {
-  background: url('./base.png') 0px 768px;
-  animation: play-left .5s steps(9) infinite;
+  background: url("./base.png") 0px 768px;
+  animation: play-left 0.5s steps(9) infinite;
 }
 
 .character.right {
-  background: url('./base.png') 0px 640px;
-  animation: play-right .5s steps(9) infinite;
+  background: url("./base.png") 0px 640px;
+  animation: play-right 0.5s steps(9) infinite;
 }
 
 .characterContainer {
   position: fixed;
   transition-property: left, top;
   transition-duration: 0.5s;
+}
+
+.bullet {
+  background-color: black;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
 }
