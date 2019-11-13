@@ -4,7 +4,8 @@ doc.onclick = (e) => {
 }
 
 const people = []
-if (window.Warrior) {
+if (Warrior) {
+  console.log(Warrior)
   people.push(new Warrior(300, 400))
 } else {
   people.push(new Person(100, 200, DOWN))
